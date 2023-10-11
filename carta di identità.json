@@ -1,0 +1,11 @@
+{
+    "titolo": "carta di identità",
+    "nome": "Domenico",
+    "cognome": "Guerrera",
+    "data_di_nascita": "08/08/2005",
+    "luogo_di_nascita": "Napoli",
+    "sesso": "M",
+    "altezza": 1.92,
+    "scadenza": "08/08/2028",
+    "emissione": "06/07/2023"
+}
