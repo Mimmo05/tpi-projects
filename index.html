@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carta di identità</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="titolo" class="titolo_css">
+            </div>
+            <div>
+                <div style="display: inline-block;">
+
+                    <div class="campi_css">
+                        Nome:
+                        <div id="nome">
+                        </div>
+                    </div>
+                    <div class="campi_css">
+                        Cognome:
+                        <div id="cognome">
+                        </div>
+                    </div>
+                    <div class="campi_css">
+                        Data di nascita:
+                        <div id="nascita">
+                        </div>
+                    </div>
+                    <div class="campi_css">
+                        Luogo di nascita:
+                        <div id="luogo">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="Foto_carta.jpg" alt="mia_foto" class="foto">
+                </div>
+            </div>
+            <div>
+                <div class="sesso_css">
+                    Sesso:
+                    <div id="sesso">
+                    </div>
+                </div>
+                <div class="scadenza_css">
+                    Scadenza:
+                    <div id="scadenza">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="altezza_css">
+                    Altezza:
+                    <div id="altezza">
+                    </div>
+                </div>
+                <div class="emissione_css">
+                    Emissione:
+                    <div id="emissione">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        fetch('./carta di identità.json')
+            .then((response) => response.json())
+            .then((json) => {
+                console.log(json);
+                document.getElementById("titolo").innerHTML=json.titolo;
+                document.getElementById("nome").innerHTML=json.nome;
+                document.getElementById("cognome").innerHTML=json.cognome;
+                document.getElementById("nascita").innerHTML=json.data_di_nascita;
+                document.getElementById("luogo").innerHTML=json.luogo_di_nascita;
+                document.getElementById("sesso").innerHTML=json.sesso;
+                document.getElementById("altezza").innerHTML=json.altezza;
+                document.getElementById("emissione").innerHTML=json.emissione;
+                document.getElementById("scadenza").innerHTML=json.scadenza;
+            });
+
+    </script>
+    </body>
+</html>
