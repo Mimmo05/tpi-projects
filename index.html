@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="photo">
-                    <img src="Foto_carta.jpg" alt="mia_foto" class="foto">
+                    <img id="Foto_carta" alt="mia_foto" class="foto">
                 </div>
             </div>
             <div>
@@ -78,6 +78,7 @@
                 document.getElementById("altezza").innerHTML=json.altezza;
                 document.getElementById("emissione").innerHTML=json.emissione;
                 document.getElementById("scadenza").innerHTML=json.scadenza;
+                document.getElementById("Foto_carta").setAttribute('src', json.immagine);
             });
 
     </script>

@@ -7,5 +7,6 @@
     "sesso": "M",
     "altezza": 1.92,
     "scadenza": "08/08/2028",
-    "emissione": "06/07/2023"
+    "emissione": "06/07/2023",
+    "immagine": "./Foto_carta.jpg"
 }
